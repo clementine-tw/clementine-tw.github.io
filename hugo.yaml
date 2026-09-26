@@ -16,3 +16,7 @@ params:
         url: "https://github.com/clementine-tw/"
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
+
+caches:
+  images:
+    dir: :cacheDir/images
