@@ -1,6 +1,6 @@
 ---
 date: "2026-09-26T17:02:13+08:00"
-draft: true
+draft: false
 title: "學習 Kubernetes 之路 - Part 1"
 ---
 
