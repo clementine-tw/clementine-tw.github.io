@@ -9,6 +9,10 @@ params:
     title: Clement Tsai
     subtitle: |
       一位熱衷技術並持續學習的軟體工程師
+    imageUrl: "/image/profile.jpeg"
+    imageTitle: "Clement Tsai 的大頭照"
+    imageWidth: 200
+    imageHeight: 200
     buttons:
       - name: Archive
         url: "/archive"
