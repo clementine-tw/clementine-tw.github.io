@@ -1,6 +1,6 @@
 ---
 date: "2026-09-27T12:57:14+08:00"
-draft: true
+draft: false
 title: "學習 Kubernetes (K8s) 之路 - Part 2"
 ---
 
