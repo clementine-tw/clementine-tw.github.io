@@ -1,7 +1,7 @@
 ---
 date: "2026-09-26T15:53:26+08:00"
 draft: false
-title: "學習 Kubernetes 之路 - 前言"
+title: "學習 Kubernetes (k8s) 之路 - 前言"
 tags: ["Kubernetes", "DevOps"]
 ---
 

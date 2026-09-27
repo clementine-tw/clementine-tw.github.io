@@ -17,6 +17,13 @@ params:
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
 
+frontmatter:
+  lastmod:
+    - "lastmod"
+    - ":git"
+    - ":fileModTime"
+    - "date"
+
 caches:
   images:
     dir: :cacheDir/images
