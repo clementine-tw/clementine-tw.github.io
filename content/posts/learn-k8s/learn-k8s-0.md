@@ -3,6 +3,7 @@ date: "2026-09-26T15:53:26+08:00"
 draft: false
 title: "學習 Kubernetes (K8s) 之路 - 前言"
 tags: ["Kubernetes", "DevOps"]
+description: '前言'
 ---
 
 我本身不是維運工程師，而是負責開發與維護應用功能的應用工程師。

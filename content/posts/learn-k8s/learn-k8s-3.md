@@ -3,6 +3,7 @@ date: '2026-09-28T14:45:00+08:00'
 draft: false
 title: '學習 Kubernetes (K8s) 之路 - Part 3 Pods'
 tags: ["Kubernetes", "DevOps"]
+description: '學習 K8s 的 Pod 元件'
 ---
 
 ## Pods

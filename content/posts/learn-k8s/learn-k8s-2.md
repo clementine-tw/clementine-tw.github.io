@@ -3,6 +3,7 @@ date: "2026-09-27T12:57:14+08:00"
 draft: false
 title: "學習 Kubernetes (K8s) 之路 - Part 2"
 tags: ["Kubernetes", "DevOps"]
+description: '初步認識 K8s'
 ---
 
 ## 概覽
@@ -25,3 +26,21 @@ tags: ["Kubernetes", "DevOps"]
 **Minikbe** 的 **All-In-One Single-Node** 安裝模式就是將這兩個部分放在同一個 **Node** 上，也就是 **Control Plane** 與 **Worker** 在同一個 **Node** ，也因此降低容錯能力，只適合用來學習與測試。
 
 正式環境的 **K8s** 會將 **Control Plane** 與 **Worker** 各自部署在一個或多個 **Node** ，增加系統的容災能力。
+
+## Namespaces
+
+**Namespace** 是 **K8s** 用來區隔環境的手段， **K8s** 本身運作的元件都在 `kube-*` **Namespace** 下，而使用者建立的資源等等，若沒有特別指定，都會在 `default` **Namespace** 下。
+
+使用者可以自己指定建立的資源要放在哪個 **Namespace** 下，藉此來區隔不同部門、不同生產環境或是不同用途等等，但一般來說不建議放在 `kube-*` **Namespace** 下，因為那是 **K8s** 系統使用的。
+
+查看現有的 **Namespace** ：
+
+```bash
+kubectl get namespace
+```
+
+## Labels
+
+在 **K8s** 各種資源的設定檔中，常常可以見到 `labels` ， `labels` 是一個鍵值對應的集合，可以說是資源的標籤。
+
+`labels` 本身沒有特別的意義，但是可以在各種管理資源的設定去作為選擇的依據。

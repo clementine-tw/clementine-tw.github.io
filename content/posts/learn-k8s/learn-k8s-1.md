@@ -3,6 +3,7 @@ date: "2026-09-26T17:02:13+08:00"
 draft: false
 title: "學習 Kubernetes (K8s) 之路 - Part 1"
 tags: ["Kubernetes", "DevOps"]
+description: '安裝 K8s'
 ---
 
 ## 安裝 Kubernetes (K8s)
