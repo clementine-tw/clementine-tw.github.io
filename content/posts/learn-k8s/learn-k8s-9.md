@@ -13,15 +13,11 @@ description: '學習 K8s 的 Volume (1)'
 1. Ephemeral - 與 **Pod** 同時建立與移除
 2. Persistent - 可以持久保存
 
-### 1. Ephemeral Volume
+### 1. ConfigMap
 
-這邊介紹幾種我認為 **RD** 比較需要知道的類型。
+我們前面有提到 **ConfigMap**，它就可以作為 **Volume** 直接使用，屬於 **Ephemeral**，還記得 **ConfigMap** 可以將檔案名稱與內容作為它的鍵值嗎？當我們將 **ConfigMap** 作為 **Volume** 時，它的鍵值就會轉換回掛載路徑下的檔名與內容了！
 
-#### 1. ConfigMap
-
-我們前面有提到 **ConfigMap**，它就可以作為 **Volume** 直接使用，還記得 **ConfigMap** 可以將檔案名稱與內容作為它的鍵值嗎？當我們將 **ConfigMap** 作為 **Volume** 時，它的鍵值就會轉換回掛載路徑下的檔名與內容了！
-
-我用 [Caddy](https://caddyserver.com/) 的 [Docker Image](https://hub.docker.com/_/caddy) 來實際操作掛載 **ConfigMap** 作為 **Volume**，沒有選擇 [Nginx]() 是因為 **Caddy** 的設定檔相對沒那麼複雜，適合不需要 **Nginx** 的更多更強大的功能的情況。
+我用 [Caddy](https://caddyserver.com/) 的 [Docker Image](https://hub.docker.com/_/caddy) 來實際操作掛載 **ConfigMap** 作為 **Volume**，沒有選擇 [Nginx](https://nginx.org/en/) 是因為 **Caddy** 的設定檔相對沒那麼複雜，適合不需要 **Nginx** 的更多更強大的功能的情況。
 
 先在本地準備好 **Caddy** 的設定檔 `Caddyfile`，這個設定檔簡單的讓 **Caddy** 監聽 `port 2015` 且回應 `hello world`。
 
@@ -108,5 +104,3 @@ kubectl port-forward deploy/caddy-deploy 8080:2015
 ```bash
 curl localhost:8080
 ```
-
-下一篇繼續介紹其它類型。
